@@ -6,7 +6,8 @@
 
 <HBox alignment="CENTER" spacing="10.0" maxHeight="1920" maxWidth="1280"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.rockpaperscissors.HelloController">
+      fx:controller="com.example.rockpaperscissors.HelloController"
+      styleClass="Background">
 
     <GridPane alignment="CENTER" hgap="20" vgap="20">
 
@@ -28,11 +29,12 @@
               style="-fx-border-color: black; -fx-border-width: 2; -fx-padding: 10; -fx-background-color: #f4f4f4;"
               alignment="CENTER_LEFT"
               maxHeight="300" minHeight="200" prefHeight="100"
-              GridPane.halignment="LEFT" GridPane.valignment="TOP">
+              GridPane.halignment="LEFT" GridPane.valignment="TOP"
+              styleClass="InfoText">
 
             <Text wrappingWidth="200"  style="-fx-font-size: 19px; "
                    text="You have 5 lives. If you lose all of them, you lose! But so does your opponent... Good Luck!"
-                  GridPane.columnSpan="2" />
+                  GridPane.columnSpan="2"/>
         </VBox>
 
         <Text wrappingWidth="600" style="-fx-font-size: 35px; -fx-font-weight: bold;"
@@ -40,9 +42,9 @@
               GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"
               GridPane.halignment="CENTER" />
 
-        <Button fx:id="ScissorsButton" onAction="#ButtonClickScissors" text="Scissor" GridPane.columnIndex="0" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
-        <Button fx:id="RockButton" onAction="#ButtonClickRock" text="Rock" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
-        <Button fx:id="PaperButton" onAction="#ButtonClickPaper" text="Paper" GridPane.columnIndex="2" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
+        <Button fx:id="ScissorsButton" onAction="#ButtonClickScissors" styleClass="Scissorsbtn" text="Scissor" GridPane.columnIndex="0" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
+        <Button fx:id="RockButton" onAction="#ButtonClickRock" styleClass="Rockbtn" text="Rock" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
+        <Button fx:id="PaperButton" onAction="#ButtonClickPaper" styleClass="Paperbtn" text="Paper" GridPane.columnIndex="2" GridPane.rowIndex="3" maxWidth="200" maxHeight="200"/>
 
         <Label fx:id="UpdateBox" GridPane.columnIndex="1" GridPane.rowIndex="2"
                style="-fx-font-size: 35px; -fx-font-weight: bold;"
@@ -56,7 +58,7 @@
 
         <Label text="First Java Project by Sebastian Rusch"
                textAlignment="CENTER"
-               GridPane.columnIndex="2" GridPane.rowIndex="4"
+               GridPane.columnIndex="2" GridPane.rowIndex="8"
                GridPane.columnSpan="2" GridPane.halignment="CENTER" />
 
     </GridPane>

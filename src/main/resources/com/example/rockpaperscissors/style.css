@@ -1,0 +1,42 @@
+.Scissorsbtn {
+    -fx-background-color: rgb(98, 179, 205);
+    background-color: rgb(98, 179, 205); 
+    -fx-size: 100px;
+    size: 0cap;
+}
+.Rockbtn {
+    -fx-background-color: rgb(98, 179, 205);
+    background-color: rgb(98, 179, 205); 
+    -fx-size: 30;
+    size: 0cap;
+}
+.Paperbtn {
+    -fx-background-color: rgb(98, 179, 205);
+    background-color: rgb(98, 179, 205); 
+    -fx-size: 100px;
+    size: 0cap;
+}
+
+.label {
+    -fx-background-color: rgba(255, 255, 255, 0);
+    background-color:rgb(255, 255, 255); 
+    -fx-text-fill: black;
+    -fx-font-size: 40px;
+    font-size: 20px;
+}
+
+.Background {
+    -fx-background-image: url("images/background.png");
+    background-image: none;
+    -fx-background-size: cover;
+    background-size: auto;
+    -fx-background-position: center;
+    background-position: 0%;
+}
+.InfoText {
+
+-fx-background-color: rgba(0, 0, 255, 0);
+background-color: aliceblue;
+
+
+}
